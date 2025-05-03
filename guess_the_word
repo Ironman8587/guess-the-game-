@@ -1,0 +1,168 @@
+list=["angel", "jaipur", "book", "apple", "aglet"]
+print ("welcome to the , WORD GUESS GAME")
+print ("rules:,\nyou will get 6 attempts to guess the right letter. \nAfter each wrong attempts,attempt will decrease.\nAfter each correct guess attempts will not lose ")
+index= int(input("\npress any number from (0-4) to start the game "))
+word = list[index]
+left_attempts = 6
+correct_input = []
+number_of_alphabets='_'*len(word)
+guessed= False
+if index == 0 :
+    print ("hint: messenger of god.")
+    while left_attempts > 0 and not guessed:
+        print("\n remaining attempts are ", left_attempts)
+        guess = input("guess the letter, press enter after each letter (alphabet) ")
+            
+        if guess in correct_input:
+            print("You've already guessed this letter. Try another one.")
+            continue
+        correct_input.append(guess)
+        if guess in word :
+            print ("you guess it right ",guess," is there in the word")
+            new_display = ""
+            for i in range(len(word)):
+                if word[i] in correct_input:
+                   new_display += word[i]
+                else:
+                     new_display += "_"
+            number_of_alphabets = new_display
+            print("Word:", number_of_alphabets)
+
+            if "_" not in number_of_alphabets:
+                guessed = True
+        else:
+            left_attempts -= 1
+            print ("sorry better luck next time ",guess,"is not in word, dont worry you have ",left_attempts," attempts left")
+            print ("\n word", number_of_alphabets)
+    if guessed:
+        print("\nwell done my friend. You guessed the right word->", word)
+    else:
+        print ("\n sorry, you guesses the wrong word and now you are run out of attempts. better luck for the another round .")
+
+elif index== 1 :
+    print ("hint: pink city of India.")
+    while left_attempts > 0 and not guessed:
+        print("\n remaining attempts are ", left_attempts)
+        guess = input("guess the letter, press enter after each letter (alphabet) ")
+              
+        if guess in correct_input:
+            print("You've already guessed this letter. Try another one.")
+            continue
+        correct_input.append(guess)
+        if guess in word :
+            print ("you guess it right ",guess," is there in the word")
+            new_display = ""
+            for i in range(len(word)):
+                if word[i] in correct_input:
+                   new_display += word[i]
+                else:
+                     new_display += "_"
+            number_of_alphabets = new_display
+            print("Word:", number_of_alphabets)
+
+            if "_" not in number_of_alphabets:
+                guessed = True
+        else:
+            left_attempts -= 1
+            print ("sorry better luck next time ",guess,"is not in word, dont worry you have ",left_attempts," attempts left")
+            print ("\n word", number_of_alphabets)
+    if guessed:
+        print("\nwell done my friend. You guessed the right word->", word)
+    else:
+        print ("\n sorry, you guesses the wrong word and now you are run out of attempts. better luck for the another round .")
+elif index== 2 :
+    print ("hint: set of written or printed pages bound together.")
+    while left_attempts > 0 and not guessed:
+        print("\n remaining attempts are ", left_attempts)
+        guess = input("guess the letter, press enter after each letter (alphabet) ")
+              
+        if guess in correct_input:
+            print("You've already guessed this letter. Try another one.")
+            continue
+        correct_input.append(guess)
+        if guess in word :
+            print ("you guess it right ",guess," is there in the word")
+            new_display = ""
+            for i in range(len(word)):
+                if word[i] in correct_input:
+                   new_display += word[i]
+                else:
+                     new_display += "_"
+            number_of_alphabets = new_display
+            print("Word:", number_of_alphabets)
+
+            if "_" not in number_of_alphabets:
+                guessed = True
+        else:
+            left_attempts -= 1
+            print ("sorry better luck next time ",guess,"is not in word, dont worry you have ",left_attempts," attempts left")
+            print ("\n word", number_of_alphabets)
+    if guessed:
+        print("\nwell done my friend. You guessed the right word->", word)
+    else:
+        print ("\n sorry, you guesses the wrong word and now you are run out of attempts. better luck for the another round .")
+elif index== 3 :
+    print ("hint: I grow on a tree, I'm red, green, or yellow. Eat me to stay away from doctor.")
+    while left_attempts > 0 and not guessed:
+        print("\n remaining attempts are ", left_attempts)
+        guess = input("guess the letter, press enter after each letter (alphabet) ")
+              
+        if guess in correct_input:
+            print("You've already guessed this letter. Try another one.")
+            continue
+        correct_input.append(guess)
+        if guess in word :
+            print ("you guess it right ",guess," is there in the word")
+            new_display = ""
+            for i in range(len(word)):
+                if word[i] in correct_input:
+                   new_display += word[i]
+                else:
+                     new_display += "_"
+            number_of_alphabets = new_display
+            print("Word:", number_of_alphabets)
+
+            if "_" not in number_of_alphabets:
+                guessed = True
+        else:
+            left_attempts -= 1
+            print ("sorry better luck next time ",guess,"is not in word, dont worry you have ",left_attempts," attempts left")
+            print ("\n word", number_of_alphabets)
+    if guessed:
+        print("\nwell done my friend. You guessed the right word->", word)
+    else:
+        print ("\n sorry, you guesses the wrong word and now you are run out of attempts. better luck for the another round .")
+elif index== 4 :
+    print ("hint: The top of a shoelace.")
+    while left_attempts > 0 and not guessed:
+        print("\n remaining attempts are ", left_attempts)
+        guess = input("guess the letter, press enter after each letter (alphabet) ")
+              
+        if guess in correct_input:
+            print("You've already guessed this letter. Try another one.")
+            continue
+        correct_input.append(guess)
+        if guess in word :
+            print ("you guess it right ",guess," is there in the word")
+            new_display = ""
+            for i in range(len(word)):
+                if word[i] in correct_input:
+                   new_display += word[i]
+                else:
+                     new_display += "_"
+            number_of_alphabets = new_display
+            print("Word:", number_of_alphabets)
+
+            if "_" not in number_of_alphabets:
+                guessed = True
+        else:
+            left_attempts -= 1
+            print ("sorry better luck next time ",guess,"is not in word, dont worry you have ",left_attempts," attempts left")
+            print ("\n word", number_of_alphabets)
+    if guessed:
+        print("\nwell done my friend. You guessed the right word->", word)
+    else:
+        print ("\n sorry, you guesses the wrong word and now you are run out of attempts. better luck for the another round .")
+else :
+    print ("plz chose number from 0-4 only") 
+
